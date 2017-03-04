@@ -27,7 +27,7 @@ RUN curl -LO https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh &
     rm Anaconda3-4.2.0-Linux-x86_64.sh && \
     rm -rf /var/lib/apt/lists/*
 
-ENV PATH /Anaconda/bin:$PATH
+ENV PATH /Anaconda3/bin:$PATH
 
 # Update conda packages
 RUN conda update -y conda && \
